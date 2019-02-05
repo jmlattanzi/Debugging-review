@@ -24,7 +24,11 @@ class page3 extends Component {
         return (
             <div>
                 <h1>Page 3</h1>
-                {this.state.characters}
+                {this.state.characters.map((char) => (
+                    <div key={char.id}>
+                        <h1>{char.name}</h1>
+                    </div>
+                ))}
                 <div>
                     <Link to='/'> Home</Link>
                 </div>

@@ -8,9 +8,9 @@ import Page3 from './components/page3/page3'
 
 export default (
     <Switch>
-        <Route path='/' component={home} />
-        <Route path='./page1' component={Page1} />
-        <Route path='./page2' component={Page2} />
-        <Route path='./page3' component={Page3} />
+        <Route exact path='/' component={home} />
+        <Route path='/Page1' component={Page1} />
+        <Route path='/Page2' component={Page2} />
+        <Route path='/Page3' component={Page3} />
     </Switch>
 )

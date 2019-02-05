@@ -7,7 +7,7 @@ const UPDATE_INPUT = 'UPDATE_INPUT'
 
 export const updateInput = (input) => {
     return {
-        action: UPDATE_INPUT,
+        type: UPDATE_INPUT,
         payload: input,
     }
 }
